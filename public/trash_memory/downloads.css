@@ -1,0 +1,69 @@
+@import 'nib'
+body
+  font-family Montserrat, sans-serif
+  font-weight 400
+  background #222
+    
+*
+    box-sizing border-box
+
+.flip
+  position absolute
+  width 160px
+  height 48px
+  perspective 500px
+  top 50%
+  left 50%
+  margin -24px 0 0 -80px
+  a
+    font-weight 400
+    text-transform uppercase
+    margin 0
+    padding 0
+    width 100%
+    height 100%
+    position absolute
+    transform-style preserve-3d
+    transform translateZ(-25px)
+    transition transform 0.3s
+    cursor pointer
+    .front,
+        .back
+      margin 0
+      width 160px
+      height 48px
+      line-height 48px
+      position absolute
+      text-align center
+      letter-spacing .4em
+    .front
+      background-color #222
+      color #fff
+      transform rotateY(0) translateZ(24px)
+    .back
+      background-color rgba(white,.0)
+      color rgba(#222,.0)
+      transform rotateX(90deg) translateZ(24px)
+      overflow hidden
+      &:after
+        content ''
+        position absolute
+        top -32%
+        left -10%
+        width 120%
+        height 50%
+        background #222
+        transform rotate(8deg)
+        transition all .5s ease
+        transition-delay .15s
+    &:hover
+      transform translateZ(-24px) rotateX(-90deg)
+      .front
+        background black
+        transition all .8s ease
+      .back
+        color #222
+        transition color .4s linear
+        background white
+        &:after
+          transform rotate(6deg) translate(100px,-18px)

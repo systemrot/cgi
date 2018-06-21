@@ -1,0 +1,18 @@
+let fields = document.getElementsByTagName("input");
+
+let submit = document.getElementById("sendData");
+
+// Array.prototype.forEach.call(fields, (elem) => {
+// 	console.log(elem.value);
+// });
+
+submit.onclick = (e) => {
+	let flagOfEmpty = false;
+	Array.prototype.forEach.call(fields, (elem) => {
+		if(elem.value === "") flagOfEmpty = true;
+	});
+	if(flagOfEmpty){
+		e.preventDefault();
+		alert("There are empty fields!");
+	}
+};

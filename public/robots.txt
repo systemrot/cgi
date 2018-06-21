@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /account*
+
+User-agent: Yandex
+Disallow: /account*
+Clean-param: user&filter&sort 
+Host: http://jojomojo.ddns.net

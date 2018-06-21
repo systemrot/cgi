@@ -1,0 +1,240 @@
+/*@media all and (max-width : 768px) {
+  .container {
+  width: 94%;
+  padding: 3%;
+  background: red;
+  } 
+}*/
+
+/*@media all and (max-width: 768px){
+.container{
+    position: relative;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+    width: 100%;
+}*/
+
+#sendData{
+  color: white;
+  background: #33363F;
+}
+
+
+form input:invalid{
+  background: #FBAFB5;
+}
+
+form input:valid{
+  background: #D4D7FB;
+}
+form input:focus{
+  outline: none;
+  background: #9C9ED8;
+  box-shadow: 0 0 .1em .1em #000000;
+}
+
+#sendData:hover{
+  color: white;
+  background: #111111;
+  border-radius: 1em;
+  box-shadow: 0 0 .1em .1em #999999;
+}
+
+body{
+	background: url('img/irina-kostenich-497161-unsplash.jpg');
+  background-size: 1920px 1080px;
+	background-position:top center;
+	background-repeat: no-repeat;
+	font-size: 18px;
+  background-attachment: fixed;
+}
+/*#data{
+	max-height: 1382px;
+	overflow : auto;
+}*/
+
+.nav{
+  display: inline;
+}
+a{
+	text-decoration: none;
+/* 	padding:20px; */
+	color: black;
+
+}
+
+a:hover{
+	text-decoration: none; 
+	color:black
+}
+
+.container{
+  max-width:1175px;
+}
+
+.content{
+	max-height: 1382px;
+	overflow : auto;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px 3px #222222;
+	background: #33363F;
+	opacity: 0.8;
+}
+
+/* #####################
+########################
+##################### */
+html, body{ 
+  margin: 0; 
+  padding: 0;
+  color: #ddf;
+/*   background-color: #112; */
+   text-align: center;
+/*   padding-top: 20vh; */
+}
+
+.button,
+.button::before,
+.button::after,
+.button span,
+.button span::before,
+.button span::after
+{
+  transition: all ease .5s;
+}
+
+.button{
+  position: relative;
+  display: inline-block;
+  padding: 0.3em;
+  margin: 1em;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+/*  width: 5em;*/
+  width: 228px;
+}
+
+.button:hover
+{
+  box-shadow: 0 0 2em .5em rgba(33,33,33,.7);
+}
+
+.button span
+{
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em 2em;
+}
+
+.button:hover span
+{
+  background-color: #2A1B03;
+  opacity: 0.5;
+  color: #cccccc;
+}
+
+.button::before,
+.button::after,
+.button span::before,
+.button span::after
+{
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.button::before,
+.button span::before
+{
+  border-style: solid none;  
+}
+
+.button::before,
+.button span::after{      
+  left: 0;
+  top: -0.4em;
+  width: 100%; 
+  height: calc(100% + 0.8em);
+}
+
+.button::after,
+.button span::after
+{
+  border-style: none solid;   
+}
+
+.button::after,
+.button span::before
+{
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em); 
+}
+
+.button:hover::after,
+.button:hover span::after
+{
+  transform: scaleY(0);
+}
+
+.button:hover::before,
+.button:hover span::before
+{
+  transform: scaleX(0);
+}
+
+.button:hover span::after,
+.button:hover span::before
+{
+  opacity: 0;
+}
+
+/*adaptive*/
+/*@viewport {
+  user-zoom: fixed;
+}
+*/
+/*@media(min-width: 0px) and (max-width: 760px){
+body{
+  background: url('img/imgonline-com-ua-Resize-CFAyU3zZQ0u.jpg');
+  background-repeat: no-repeat;
+  background-size: 1080px 1700px;
+}*/
+
+@media(min-width: 0px) and (max-width: 760px){
+body{
+  background: url('img/imgonline-com-ua-Resize-CFAyU3zZQ0u.jpg');
+  background-repeat: no-repeat;
+  background-size: 720px 1280px;
+}
+.button{
+  background
+  opacity: 0.5;
+  background: rgba(249, 236, 218, 0.7);;
+}
+
+
+
+/*  .container { 
+    display: inline;
+    width: 480px;
+    height: 1920px;*/
+/*       zoom: 3; 
+-moz-transform: scale(3); 
+-moz-transform-origin: 0 0; */
+ /* } */
+}
+
+@font-face {
+      font-family: "BeerRegular";
+      src: url("../fonts/BeerRegular/BeerRegular.eot");
+      src: url("../fonts/BeerRegular/BeerRegular.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/BeerRegular/BeerRegular.woff") format("woff"),
+      url("../fonts/BeerRegular/BeerRegular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
