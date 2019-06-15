@@ -27,7 +27,7 @@ connectToDb = (callback) => {
 	con = mysql.createConnection({
 		host:"localhost",
 		user:"client",
-		password:"lost_23031995"
+		password:"test"
 	});
 
 	try{
